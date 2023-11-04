@@ -22,7 +22,10 @@ n = int(input("Enter the second number: "))
 k = max(m, n)
 l = min(m, n)
 while k%l != 0:
-    k = l
-    l = k%l
-
+    k2 = k
+    l2 = l
+    k = l2
+    l = k2%l2
+    print("New k, l",k,l)
+print("The maximum divider is ", l)
 

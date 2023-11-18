@@ -6,12 +6,11 @@ screen.setup(500, 500)
 
 t = turtle.Turtle()
 t.penup()
-t.goto(-230,20)
 t.pendown()
-for my_time in range(0,1000):
+for my_time in range(0,2000):
     my_angle = my_time * math.pi / 180.0
-    x = int(50 * math.cos(-my_angle)) + 0.5*my_time - 250
-    y = int(50 * math.sin(-my_angle)) + 20
+    x = int(30 * math.cos(4.378*my_angle)) + int(200*math.cos(-my_angle))
+    y = int(30 * math.sin(4.378*my_angle)) + int(200*math.sin(-my_angle))
     t.goto(x,y)
 
 turtle.mainloop()
